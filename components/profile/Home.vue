@@ -28,7 +28,7 @@
     <v-col cols="6">
       <p class="text-center logo-text">
         I am a Web developer focus on solutions, I love to learn about new
-        technology and develop my skills
+        technologies
       </p></v-col
     >
   </v-row>
