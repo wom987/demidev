@@ -4,7 +4,7 @@
       v-model="drawer"
       :mini-variant="miniVariant"
       :clipped="clipped"
-      absolute
+      fixed
       temporary
     >
       <v-list>
@@ -73,7 +73,7 @@ export default {
       items: [
         {
           icon: 'mdi-chart-bubble',
-          title: 'Inspire',
+          title: 'Counter Example',
           to: '/inspire',
         },
       ],
