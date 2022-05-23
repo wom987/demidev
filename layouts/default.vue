@@ -44,6 +44,12 @@
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
       <v-toolbar-title v-text="title" />
       <v-spacer />
+      <v-switch
+        :value="darkMode"
+        @change="toggleDarkMode"
+        :label="`toggle ${switchLabel} mode`"
+        class="mt-5"
+      ></v-switch>
     </v-app-bar>
     <v-main>
       <v-container>
@@ -75,7 +81,20 @@ export default {
       right: true,
       rightDrawer: false,
       title: 'Wilmar Osorio',
+      //? dark mode var
+      darkMode:false
     }
+  },
+  methods: {
+    toggleDarkMode: function () {
+      this.$vuetify.theme.dark = !this.$vuetify.theme.dark
+      this.darkMode = !this.darkMode
+    },
+  },
+  computed: {
+    switchLabel: function () {
+      return this.darkMode ? 'light' : 'dark'
+    },
   },
 }
 </script>
