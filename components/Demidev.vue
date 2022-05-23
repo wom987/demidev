@@ -8,7 +8,7 @@
           viewBox="0 0 500 500"
           width="100%"
           id="blobSvg"
-          style="opacity: 1; height: 100vh"
+          style="opacity: 1; height: 80vh"
           filter="blur(0px)"
         >
           <defs>
@@ -26,7 +26,9 @@
             ></animate>
           </path></svg
       ></v-col>
-      <v-col cols="6"> <h1>Web Development</h1></v-col>
+      <v-col cols="6">
+        <p class="text-center logo-text">I am a Web developer focus on solutions,  I love to learn about new technology and develop my skills</p></v-col
+      >
     </v-row>
   </div>
 </template>
@@ -35,4 +37,17 @@
 export default {}
 </script>
 
-<style></style>
+<style>
+.logo-text {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: 15vh;
+}
+@media (max-width:500px) {
+    .logo-text {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 15vh;
+}
+}
+</style>

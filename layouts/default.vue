@@ -8,6 +8,22 @@
       temporary
     >
       <v-list>
+        <v-list-item :to="'/'">
+          <v-list-item-action>
+            <v-icon>mdi-account-tie</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title v-text="'About Me'" />
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item>
+          <v-list-item-action>
+            <v-icon>mdi-apps-box</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title v-text="'Demos'" />
+          </v-list-item-content>
+        </v-list-item>
         <v-list-item
           v-for="(item, i) in items"
           :key="i"
@@ -49,11 +65,6 @@ export default {
       drawer: false,
       fixed: false,
       items: [
-        {
-          icon: 'mdi-apps',
-          title: 'Welcome',
-          to: '/',
-        },
         {
           icon: 'mdi-chart-bubble',
           title: 'Inspire',
