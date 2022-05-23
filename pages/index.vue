@@ -4,6 +4,7 @@
       <v-card class="logo py-4 d-flex justify-center">
         <NuxtLogo />
         <VuetifyLogo />
+        <Demidev/>
       </v-card>
       <v-card>
         <v-card-title class="headline">
@@ -81,7 +82,9 @@
 </template>
 
 <script>
+import Demidev from '~/components/Demidev.vue';
 export default {
-  name: 'IndexPage',
+    name: "IndexPage",
+    components: { Demidev }
 }
 </script>
